@@ -981,8 +981,19 @@
 
         <div class="form-row two">
           <div>
-            <label class="form-label">Vehicle Year / Make / Model <span class="req">*</span></label>
-            <input class="form-input" type="text" name="Vehicle" placeholder="2015 Honda Civic" required>
+            <label class="form-label">Vehicle Year <span class="req">*</span></label>
+            <input class="form-input" type="text" name="Vehicle Year" placeholder="2015" inputmode="numeric" pattern="\d{4}" maxlength="4" title="Enter the 4-digit year" required>
+          </div>
+          <div>
+            <label class="form-label">Make <span class="req">*</span></label>
+            <input class="form-input" type="text" name="Vehicle Make" placeholder="Honda" required>
+          </div>
+        </div>
+
+        <div class="form-row two">
+          <div>
+            <label class="form-label">Model <span class="req">*</span></label>
+            <input class="form-input" type="text" name="Vehicle Model" placeholder="Civic" required>
           </div>
           <div>
             <label class="form-label">Your Zip Code <span class="req">*</span></label>
