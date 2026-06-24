@@ -450,14 +450,17 @@
   /* Error message banner at top of form */
   .form-error-banner {
     display: none;
-    background: rgba(224,80,80,0.14);
-    border: 1px solid #E05050;
-    border-radius: 6px;
-    padding: 13px 16px;
-    margin-bottom: 18px;
-    color: #FFB3B3;
-    font-size: 15px;
-    font-weight: 600;
+    background: rgba(224,80,80,0.16);
+    border: 1.5px solid #E05050;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    color: #FF8A8A;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     text-align: center;
   }
   .form-error-banner.show {
@@ -585,6 +588,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="#services">Services</a>
       <a href="#how">How It Works</a>
+      <a href="#reviews">Reviews</a>
       <a href="#area">Service Area</a>
       <a href="tel:+19164262409" class="nav-call">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
@@ -749,8 +753,8 @@
 </section>
 
 <!-- REVIEWS -->
-<!-- REVIEWS SECTION: hidden until Google verification clears. To re-enable: change display:none to display:block below, re-add nav link, paste Google review link + widget code. -->
-<div id="reviewsHidden" style="display:none;">
+<!-- REVIEWS SECTION -->
+<div id="reviewsHidden" style="display:block;">
 <section id="reviews">
   <div class="wrap">
     <div class="eyebrow">Customer Reviews</div>
@@ -776,11 +780,9 @@
       ════════════════════════════════════════════════════════════════════════
     -->
     <div id="google-reviews">
-      <!-- PASTE YOUR GOOGLE REVIEWS WIDGET EMBED CODE HERE -->
-      <div class="reviews-placeholder">
-        <svg width="44" height="44" viewBox="0 0 24 24"><path fill="#F26419" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#F26419" opacity="0.7" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#F26419" opacity="0.5" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#F26419" opacity="0.85" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
-        <p>Your Google reviews will appear here once your widget is connected. Until then, every new customer review you collect builds the proof that goes right in this spot.</p>
-      </div>
+      <!-- SociableKit Google Reviews widget -->
+      <div class="sk-ww-google-reviews" data-embed-id="25692276"></div>
+      <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
     </div>
 
     <!-- LEAVE A REVIEW CTA -->
@@ -797,7 +799,7 @@
           copy your short review link (looks like https://g.page/r/XXXXXXXX/review)
           ════════════════════════════════════════════════════════════════
         -->
-        <a href="https://g.page/r/YOUR-GOOGLE-REVIEW-LINK/review" target="_blank" rel="noopener" class="btn-google">
+        <a href="https://g.page/r/CbLURa8wMGdyEAE/review" target="_blank" rel="noopener" class="btn-google">
           <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
           Review Us on Google
         </a>
@@ -935,14 +937,16 @@
         <input type="hidden" name="_subject" value="New Job Inquiry — Same-Day Mobile Mechanics">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://sacsamedaymechanic.com/?submitted=true">
+        <!-- Backup lead alert: CC sends a copy of every lead to your phone as a text via AT&T's free email-to-text gateway (4157064555@txt.att.net) -->
+        <input type="hidden" name="_cc" value="4157064555@txt.att.net">
+        <input type="hidden" name="_next" value="https://sacsamedaymechanic.com/thank-you.html">
         <!-- Auto-reply so the customer instantly knows you got it (stops them calling competitors while waiting) -->
         <input type="hidden" name="_autoresponse" value="Thanks for reaching out to Same-Day Mobile Mechanics Sacramento! We got your request and we'll contact you shortly — usually within 15 minutes during business hours (Mon–Sat, 7am–7pm). For anything urgent, call or text us directly at (916) 426-2409. — Same-Day Mobile Mechanics Sacramento, sacsamedaymechanic.com">
         <!-- Honeypot: hidden field bots fill out but humans never see. Keeps spam out of your inbox so you never miss a real lead. -->
         <input type="text" name="_honey" style="display:none !important;" tabindex="-1" autocomplete="off">
 
         <!-- Error banner shown when required fields are empty -->
-        <div class="form-error-banner" id="formErrorBanner">Please fill in necessary fields</div>
+        <div class="form-error-banner" id="formErrorBanner">Please Fill In Necessary Fields</div>
 
 
         <div class="form-row">
